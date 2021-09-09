@@ -11,7 +11,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  *
  * @package App\Notification\Fake
  */
-final class ChannelConfiguration
+final class FakeChannelConfiguration
 {
     /**
      * @Assert\NotBlank()

@@ -8,11 +8,11 @@ use Notification\Common\NotificationResult;
 use Notification\Common\NotificationResultInterface;
 use Notification\Common\SenderInterface;
 
-class Sender implements SenderInterface
+class FakeSender implements SenderInterface
 {
-    private ChannelConfiguration $configuration;
+    private FakeChannelConfiguration $configuration;
 
-    public function __construct(ChannelConfiguration $configuration)
+    public function __construct(FakeChannelConfiguration $configuration)
     {
         $this->configuration = $configuration;
     }
@@ -23,7 +23,7 @@ class Sender implements SenderInterface
             ->setDetailedMessage("Sent via account: " . $this->getConfiguration()->getUsername());
     }
 
-    public function getConfiguration(): ChannelConfiguration
+    public function getConfiguration(): FakeChannelConfiguration
     {
         return $this->configuration;
     }

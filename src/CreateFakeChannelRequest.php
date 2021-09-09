@@ -7,15 +7,15 @@ namespace Notification\Fake;
 use Notification\Common\AbstractCreateChannelRequest;
 use Symfony\Component\Validator\Constraints as Assert;
 
-final class CreateChannelRequest extends AbstractCreateChannelRequest
+final class CreateFakeChannelRequest extends AbstractCreateChannelRequest
 {
     /**
      * @Assert\NotBlank()
      * @Assert\Valid()
      */
-    public ChannelConfiguration $configuration;
+    public FakeChannelConfiguration $configuration;
 
-    public function getConfiguration(): ChannelConfiguration
+    public function getConfiguration(): FakeChannelConfiguration
     {
         return $this->configuration;
     }

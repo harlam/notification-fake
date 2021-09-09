@@ -7,7 +7,7 @@ namespace Notification\Fake;
 use Notification\Common\RequestInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 
-final class Message implements RequestInterface
+final class FakeMessage implements RequestInterface
 {
     /**
      * @Assert\Type(type="array")
