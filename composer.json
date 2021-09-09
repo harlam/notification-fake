@@ -1,8 +1,7 @@
 {
-  "name": "harlam/notification-fake-bundle",
+  "name": "harlam/notification-fake",
   "version": "0.1.0",
-  "type": "symfony-bundle",
-  "description": "Symfony fake notification bundle",
+  "description": "Fake notification",
   "license": "MIT",
   "require": {
     "php": ">=7.4",
@@ -13,13 +12,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Notification\\NotificationFakeBundle\\": "src/"
-    }
-  },
-  "extra": {
-    "symfony": {
-      "allow-contrib": false,
-      "require": "5.0.*"
+      "Notification\\Fake\\": "src/"
     }
   },
   "repositories": [

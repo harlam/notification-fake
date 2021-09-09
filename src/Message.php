@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Notification\NotificationFakeBundle;
+namespace Notification\Fake;
 
 use Notification\Common\RequestInterface;
 use Symfony\Component\Validator\Constraints as Assert;

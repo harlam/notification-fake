@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Notification\NotificationFakeBundle;
+namespace Notification\Fake;
 
 use Notification\Common\NotificationResult;
 use Notification\Common\NotificationResultInterface;
