@@ -1,7 +1,6 @@
 {
   "name": "harlam/notification-fake",
-  "version": "0.1.0",
-  "description": "Fake notification",
+  "description": "Fake notification library",
   "license": "MIT",
   "require": {
     "php": ">=7.4",

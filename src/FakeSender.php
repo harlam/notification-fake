@@ -10,9 +10,9 @@ use Notification\Common\SenderInterface;
 
 class FakeSender implements SenderInterface
 {
-    private FakeChannelConfiguration $configuration;
+    private FakeSenderConfiguration $configuration;
 
-    public function __construct(FakeChannelConfiguration $configuration)
+    public function __construct(FakeSenderConfiguration $configuration)
     {
         $this->configuration = $configuration;
     }
@@ -20,10 +20,10 @@ class FakeSender implements SenderInterface
     public function send(): NotificationResultInterface
     {
         return (new NotificationResult(true))
-            ->setDetailedMessage("Sent via account: " . $this->getConfiguration()->getUsername());
+            ->setDetailedMessage("Fake message sent via account: " . $this->getConfiguration()->getUsername());
     }
 
-    public function getConfiguration(): FakeChannelConfiguration
+    public function getConfiguration(): FakeSenderConfiguration
     {
         return $this->configuration;
     }

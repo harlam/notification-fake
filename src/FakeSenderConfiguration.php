@@ -7,11 +7,9 @@ namespace Notification\Fake;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * Параметры fake-канала отправки сообщений
- *
- * @package App\Notification\Fake
+ * Конфигурация отправителя fake сообщений
  */
-final class FakeChannelConfiguration
+final class FakeSenderConfiguration
 {
     /**
      * @Assert\NotBlank()
