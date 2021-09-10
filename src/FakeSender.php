@@ -23,11 +23,6 @@ class FakeSender implements SenderInterface
     public function send(object $message): NotificationResultInterface
     {
         return (new NotificationResult(true))
-            ->setDetailedMessage("Fake message sent via account: " . $this->getConfiguration()->getUsername());
-    }
-
-    public function getConfiguration(): FakeSenderConfiguration
-    {
-        return $this->configuration;
+            ->setDetailedMessage("Fake message sent via account: " . $this->configuration->getUsername());
     }
 }
