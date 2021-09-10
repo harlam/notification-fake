@@ -4,6 +4,7 @@
   "license": "MIT",
   "require": {
     "php": ">=7.4",
+    "symfony/validator": "^5.3",
     "harlam/notification-common": "dev-master"
   },
   "config": {
